@@ -20,13 +20,11 @@ public class PlayerMovement : MonoBehaviour
         .SimpleMove(movement);
 
         Vector3 relativePos = (new Vector3(-Input.GetAxisRaw("Vertical player " + player), 0, Input.GetAxisRaw("Horizontal player " + player))) * Time.fixedDeltaTime * (speed / 2);
-        Quaternion rotation = Quaternion.LookRotation(relativePos);
 
         if (relativePos != Vector3.zero)
         {
-            transform.rotation = rotation;
+            transform.rotation = Quaternion.LookRotation(relativePos);
         }
-
     }
        
 }
