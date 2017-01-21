@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wave_SimpleFire : MonoBehaviour {
 
-    public GameObject Creating_Player;
+    public GameObject Wave_Emitter;
 
     public GameObject WaveKind;
 
@@ -21,11 +21,12 @@ public class Wave_SimpleFire : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown("space"))
         {
-            GameObject Wave = Instantiate(WaveKind,Creating_Player.transform.position, Creating_Player.transform.rotation) as GameObject;
-            //Wave.transform.Rotate(Vector3.up * 45);
+            GameObject Wave = Instantiate(WaveKind,Wave_Emitter.transform.position, Wave_Emitter.transform.rotation) as GameObject;
+            //Wave.transform.Rotate(Vector3.up * 90);
             Rigidbody WaveRigidBody;
-            WaveRigidBody = Wave.GetComponent<Rigidbody>(); 
+            WaveRigidBody = Wave.GetComponent<Rigidbody>();
             WaveRigidBody.AddForce(transform.forward * FlightSpeed);
+            //WaveRigidBody.velocity = (transform.forward * FlightSpeed);
             Destroy(Wave, FlightLength);
         }
 	}
