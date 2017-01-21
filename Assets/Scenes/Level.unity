@@ -2772,7 +2772,7 @@ Prefab:
     - target: {fileID: 114970452346544510, guid: f5daa9b82e7b79048922d23f9817cea2,
         type: 2}
       propertyPath: player
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4539414199642368, guid: f5daa9b82e7b79048922d23f9817cea2, type: 2}
       propertyPath: m_LocalScale.x

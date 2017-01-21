@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-
         var movement = 
                     (Vector3.right * Input.GetAxis("Horizontal player " + player)
                    + Vector3.forward * Input.GetAxis("Vertical player " + player))
