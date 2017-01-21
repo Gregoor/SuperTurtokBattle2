@@ -1850,7 +1850,7 @@ Light:
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1.24
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2743,7 +2743,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4539414199642368, guid: f5daa9b82e7b79048922d23f9817cea2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0.575
       objectReference: {fileID: 0}
     - target: {fileID: 4539414199642368, guid: f5daa9b82e7b79048922d23f9817cea2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2819,7 +2819,12 @@ Prefab:
     - target: {fileID: 65053084045854306, guid: f5daa9b82e7b79048922d23f9817cea2,
         type: 2}
       propertyPath: m_Center.y
-      value: 0.000000074505806
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 143580218417581530, guid: f5daa9b82e7b79048922d23f9817cea2,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 33663423854964656, guid: f5daa9b82e7b79048922d23f9817cea2, type: 2}
@@ -3552,7 +3557,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625308056}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1, y: 0, z: 0.6}
+  m_LocalPosition: {x: 1.2, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1274902275}

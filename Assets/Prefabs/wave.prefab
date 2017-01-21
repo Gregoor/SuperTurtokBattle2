@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4492178086342214}
   - component: {fileID: 212491018586920876}
   - component: {fileID: 54894156419324940}
+  - component: {fileID: 114540488236703210}
   m_Layer: 0
   m_Name: wave
   m_TagString: Untagged
@@ -56,6 +57,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114540488236703210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1568948792920964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2567d9264520140a88089a9a3bc1ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212491018586920876
 SpriteRenderer:
   m_ObjectHideFlags: 1

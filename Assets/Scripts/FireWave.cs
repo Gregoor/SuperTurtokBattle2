@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityStandardAssets.Cameras;
+﻿using UnityEngine;
 
 public class FireWave : MonoBehaviour {
 
@@ -11,12 +8,6 @@ public class FireWave : MonoBehaviour {
 
     public Transform waveSpawn;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
 	void Update () {
         if (Input.GetKey(waveOneButton))
         {
