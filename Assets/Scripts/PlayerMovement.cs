@@ -11,6 +11,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+        transform.Rotate(0, Input.GetAxis("Rotation player " + player) * speed * Time.deltaTime, 0);
+
         GetComponent<CharacterController>()
             .SimpleMove((
                             Vector3.right * Input.GetAxis("Horizontal player " + player)
