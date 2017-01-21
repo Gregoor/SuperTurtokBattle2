@@ -12,13 +12,22 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 
-        transform.Rotate(0, Input.GetAxis("Rotation player " + player) * speed * Time.deltaTime, 0);
-
+        var movement = 
+                    (Vector3.right * Input.GetAxis("Horizontal player " + player)
+                   + Vector3.forward * Input.GetAxis("Vertical player " + player))
+                   * Time.fixedDeltaTime * speed;
+        
         GetComponent<CharacterController>()
-            .SimpleMove((
-                            Vector3.right * Input.GetAxis("Horizontal player " + player)
-                            + Vector3.forward * Input.GetAxis("Vertical player " + player)
-                        ) * Time.fixedDeltaTime * speed);
+        .SimpleMove(movement);
+
+        Vector3 relativePos = (new Vector3(-Input.GetAxisRaw("Vertical player " + player), 0, Input.GetAxisRaw("Horizontal player " + player))) * Time.fixedDeltaTime * (speed / 2);
+        Quaternion rotation = Quaternion.LookRotation(relativePos);
+
+        if (relativePos != Vector3.zero)
+        {
+            transform.rotation = rotation;
+        }
 
     }
+       
 }
