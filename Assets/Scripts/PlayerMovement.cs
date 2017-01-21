@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(relativePos);
         }
+
+        Debug.Log(Input.GetAxis("Horizontal player " + player));
     }
        
 }

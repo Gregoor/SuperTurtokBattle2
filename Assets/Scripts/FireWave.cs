@@ -2,14 +2,14 @@
 
 public class FireWave : MonoBehaviour {
 
-    public string waveOneButton;
+    public int player;
 
     public GameObject waveOne;
 
     public Transform waveSpawn;
 
 	void Update () {
-        if (Input.GetKey(waveOneButton))
+        if (Input.GetAxis("Shoot player " + player) > 0)
         {
 
             //var x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
