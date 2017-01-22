@@ -24,4 +24,12 @@ public class WaveOneProperties : MonoBehaviour {
         //WaveRigidBody.velocity = (transform.forward * FlightSpeed);
         Destroy(Wave, FlightLength);
     }
+    void OnCollisionEnter(Collision c)
+    {
+        if (c.collider.tag.Equals("bullet"))
+        {
+            Destroy(c.collider.gameObject);
+            Destroy(this.gameObject);
+        }
+    }
 }

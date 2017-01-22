@@ -436,7 +436,7 @@ Prefab:
     - target: {fileID: 114970452346544510, guid: f5daa9b82e7b79048922d23f9817cea2,
         type: 2}
       propertyPath: speed
-      value: 400
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1060170384037806, guid: f5daa9b82e7b79048922d23f9817cea2, type: 2}
       propertyPath: m_Name
@@ -1404,7 +1404,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 384823108}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.2, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1282745069}
@@ -1436,7 +1436,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 404676398}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.2, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1113219326}
@@ -2385,7 +2385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b96397d0e9b582c419abeb32f619b26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 400
+  speed: 300
   player: 1
 --- !u!114 &674079625
 MonoBehaviour:
@@ -2399,7 +2399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: 1
-  waveOne: {fileID: 1568948792920964, guid: 7e7472c5988bd994e8ec9bba24d872dd, type: 2}
+  waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 1625308057}
 --- !u!114 &674079626
 MonoBehaviour:
@@ -2427,7 +2427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphere: {fileID: 1202569884395668, guid: be7a19d536a0c9f49a02207f4e2d4e99, type: 2}
   gun: {fileID: 1625308057}
-  speed: 30
+  speed: 25
   player: 1
 --- !u!114 &674079628
 MonoBehaviour:
@@ -3176,7 +3176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: 3
-  waveOne: {fileID: 1568948792920964, guid: 7e7472c5988bd994e8ec9bba24d872dd, type: 2}
+  waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 404676399}
 --- !u!114 &1113219328
 MonoBehaviour:
@@ -3204,7 +3204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphere: {fileID: 0}
   gun: {fileID: 0}
-  speed: 0
+  speed: 25
   player: 0
 --- !u!114 &1113219335
 MonoBehaviour:
@@ -3916,7 +3916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: 4
-  waveOne: {fileID: 1568948792920964, guid: 7e7472c5988bd994e8ec9bba24d872dd, type: 2}
+  waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 384823109}
 --- !u!114 &1282745071
 MonoBehaviour:
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphere: {fileID: 0}
   gun: {fileID: 0}
-  speed: 0
+  speed: 25
   player: 0
 --- !u!114 &1282745078
 MonoBehaviour:
@@ -5093,7 +5093,7 @@ Prefab:
     - target: {fileID: 114970452346544510, guid: f5daa9b82e7b79048922d23f9817cea2,
         type: 2}
       propertyPath: speed
-      value: 400
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1060170384037806, guid: f5daa9b82e7b79048922d23f9817cea2, type: 2}
       propertyPath: m_Name
@@ -5350,7 +5350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: 2
-  waveOne: {fileID: 1568948792920964, guid: 7e7472c5988bd994e8ec9bba24d872dd, type: 2}
+  waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 1946622991}
 --- !u!4 &1594451322 stripped
 Transform:
@@ -5370,7 +5370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphere: {fileID: 0}
   gun: {fileID: 0}
-  speed: 30
+  speed: 25
   player: 2
 --- !u!114 &1594451324
 MonoBehaviour:
@@ -5411,7 +5411,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1625308056}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.2, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1274902275}
@@ -5641,7 +5641,7 @@ Prefab:
     - target: {fileID: 114970452346544510, guid: f5daa9b82e7b79048922d23f9817cea2,
         type: 2}
       propertyPath: speed
-      value: 400
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1060170384037806, guid: f5daa9b82e7b79048922d23f9817cea2, type: 2}
       propertyPath: m_Name
@@ -6128,7 +6128,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1946622990}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.2, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1594451322}
