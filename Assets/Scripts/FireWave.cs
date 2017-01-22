@@ -11,7 +11,7 @@ public class FireWave : MonoBehaviour {
 
 	void FixedUpdate () {
         cd++;
-        if (Input.GetAxis("Shoot player " + player) > 0  || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetAxis("Shoot player " + player) > 0)
         {
             if (cd > 20)
             {

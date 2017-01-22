@@ -24,8 +24,9 @@ public class life : MonoBehaviour {
         Debug.Log(c.collider.name);
         
         if (cd > 5 & c.collider.tag.Equals("bullet")) { 
-        //currentLife = currentLife - 10;
+        currentLife = currentLife - 10;
             Debug.Log("lifeloss");
+            Destroy(c.collider.gameObject);
         }
         if ( currentLife <= 0) { Destroy(this.gameObject); }
     }
