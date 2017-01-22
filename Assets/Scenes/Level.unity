@@ -538,7 +538,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 116403953}
   m_LocalRotation: {x: 0.6020315, y: -0, z: -0, w: 0.79847234}
-  m_LocalPosition: {x: 0, y: 25, z: -5.5}
+  m_LocalPosition: {x: 0, y: 27, z: -5.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 604216914}
@@ -2401,6 +2401,7 @@ MonoBehaviour:
   player: 1
   waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 1625308057}
+  sound: {fileID: 8300000, guid: 0b5a2a18c3150f44b8bae01917982c2c, type: 3}
 --- !u!114 &674079627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2416,6 +2417,7 @@ MonoBehaviour:
   gun: {fileID: 1625308057}
   speed: 25
   player: 1
+  sound: {fileID: 8300000, guid: 9d50b327bb174ac42bdcc50dadbde350, type: 3}
 --- !u!114 &674079628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3166,6 +3168,7 @@ MonoBehaviour:
   player: 3
   waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 404676399}
+  sound: {fileID: 8300000, guid: 0b5a2a18c3150f44b8bae01917982c2c, type: 3}
 --- !u!114 &1113219334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3181,6 +3184,7 @@ MonoBehaviour:
   gun: {fileID: 404676399}
   speed: 25
   player: 3
+  sound: {fileID: 8300000, guid: 9d50b327bb174ac42bdcc50dadbde350, type: 3}
 --- !u!114 &1113219335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3894,6 +3898,7 @@ MonoBehaviour:
   player: 4
   waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 384823109}
+  sound: {fileID: 8300000, guid: 0b5a2a18c3150f44b8bae01917982c2c, type: 3}
 --- !u!114 &1282745077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3909,6 +3914,7 @@ MonoBehaviour:
   gun: {fileID: 384823109}
   speed: 25
   player: 4
+  sound: {fileID: 8300000, guid: 9d50b327bb174ac42bdcc50dadbde350, type: 3}
 --- !u!114 &1282745078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4593,7 +4599,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: a08254005b6e0b84984ac0a8401eb8a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4724,7 +4730,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: a08254005b6e0b84984ac0a8401eb8a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5303,6 +5309,7 @@ MonoBehaviour:
   player: 2
   waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 1946622991}
+  sound: {fileID: 8300000, guid: 0b5a2a18c3150f44b8bae01917982c2c, type: 3}
 --- !u!4 &1594451322 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4539414199642368, guid: f5daa9b82e7b79048922d23f9817cea2,
@@ -5323,6 +5330,7 @@ MonoBehaviour:
   gun: {fileID: 1946622991}
   speed: 25
   player: 2
+  sound: {fileID: 8300000, guid: 9d50b327bb174ac42bdcc50dadbde350, type: 3}
 --- !u!114 &1594451324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6242,7 +6250,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: a08254005b6e0b84984ac0a8401eb8a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6601,7 +6609,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 76ff537c8e1a84345868e6aeee938ab3, type: 2}
+  - {fileID: 2100000, guid: a08254005b6e0b84984ac0a8401eb8a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
