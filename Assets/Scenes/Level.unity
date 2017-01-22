@@ -318,7 +318,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 5ff0ecfc326397145982e4846a620bc7, type: 3}
+  m_Texture: {fileID: 2800000, guid: 26cadf7192fc710428da0b8551392ba6, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1304,7 +1304,7 @@ GameObject:
   - component: {fileID: 379891102}
   - component: {fileID: 379891103}
   m_Layer: 5
-  m_Name: WaveGauge
+  m_Name: lifeGauge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1316,7 +1316,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 379891101}
-  m_LocalRotation: {x: 0, y: 0, z: 0.6360782, w: 0.7716246}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1324,11 +1324,11 @@ RectTransform:
   - {fileID: 998778250}
   m_Father: {fileID: 2046053642}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 79}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: -211}
-  m_SizeDelta: {x: 204, y: 21}
+  m_AnchoredPosition: {x: 0, y: -224}
+  m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &379891103
 MonoBehaviour:
@@ -1372,7 +1372,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1440,7 +1440,7 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children: []
   m_Father: {fileID: 1113219326}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &407771386
 Prefab:
@@ -2401,19 +2401,6 @@ MonoBehaviour:
   player: 1
   waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 1625308057}
---- !u!114 &674079626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 674079619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9428c42a7d10b8d4da4bbe27a2c968d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waveGauge: {fileID: 2143167465}
-  player: 1
 --- !u!114 &674079627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2442,6 +2429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   maxlife: 100
+  lifeGauge: {fileID: 2143167465}
 --- !u!1 &691827594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.0627451, a: 1}
+  m_Color: {r: 0.71323526, g: 1, b: 0.73122835, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2835,7 +2823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.039215688, b: 0.83921576, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3178,19 +3166,6 @@ MonoBehaviour:
   player: 3
   waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 404676399}
---- !u!114 &1113219328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1113219325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9428c42a7d10b8d4da4bbe27a2c968d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waveGauge: {fileID: 379891103}
-  player: 3
 --- !u!114 &1113219334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3202,10 +3177,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505885e861c1fab46a1118e9faaf9bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphere: {fileID: 0}
-  gun: {fileID: 0}
+  sphere: {fileID: 1202569884395668, guid: be7a19d536a0c9f49a02207f4e2d4e99, type: 2}
+  gun: {fileID: 404676399}
   speed: 25
-  player: 0
+  player: 3
 --- !u!114 &1113219335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3219,6 +3194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   maxlife: 100
+  lifeGauge: {fileID: 379891103}
 --- !u!1001 &1114875392
 Prefab:
   m_ObjectHideFlags: 0
@@ -3748,7 +3724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9725491, g: 0.9568628, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.99549335, b: 0.7205882, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3918,19 +3894,6 @@ MonoBehaviour:
   player: 4
   waveOne: {fileID: 1153261692254204, guid: 1d315f8e48ab06844967d2e51d06ff32, type: 2}
   waveSpawn: {fileID: 384823109}
---- !u!114 &1282745071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1282745068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9428c42a7d10b8d4da4bbe27a2c968d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waveGauge: {fileID: 1551262673}
-  player: 4
 --- !u!114 &1282745077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3942,10 +3905,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505885e861c1fab46a1118e9faaf9bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphere: {fileID: 0}
-  gun: {fileID: 0}
+  sphere: {fileID: 1202569884395668, guid: be7a19d536a0c9f49a02207f4e2d4e99, type: 2}
+  gun: {fileID: 384823109}
   speed: 25
-  player: 0
+  player: 4
 --- !u!114 &1282745078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3959,6 +3922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   maxlife: 100
+  lifeGauge: {fileID: 1551262673}
 --- !u!1001 &1301530301
 Prefab:
   m_ObjectHideFlags: 0
@@ -4258,7 +4222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.04705883, b: 1, a: 1}
+  m_Color: {r: 0.7352941, g: 0.74775076, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4516,7 +4480,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 95e8dbb82987d7440ba12aad6bc2026c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400020, guid: 95e8dbb82987d7440ba12aad6bc2026c, type: 3}
       propertyPath: m_LocalScale.x
@@ -4844,7 +4808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8313726, g: 0.015686275, b: 0.003921569, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5114,7 +5078,7 @@ GameObject:
   - component: {fileID: 1551262672}
   - component: {fileID: 1551262673}
   m_Layer: 5
-  m_Name: WaveGauge
+  m_Name: lifeGauge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5126,7 +5090,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1551262671}
-  m_LocalRotation: {x: 0, y: 0, z: 0.76604444, w: 0.64278764}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5134,11 +5098,11 @@ RectTransform:
   - {fileID: 179240395}
   m_Father: {fileID: 627481714}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 682.1, y: -211.5}
-  m_SizeDelta: {x: 211.9, y: 21}
+  m_AnchoredPosition: {x: 702, y: -216}
+  m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1551262673
 MonoBehaviour:
@@ -5182,7 +5146,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5325,19 +5289,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1060170384037806, guid: f5daa9b82e7b79048922d23f9817cea2,
     type: 2}
   m_PrefabInternal: {fileID: 1747056668}
---- !u!114 &1594451315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1594451314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9428c42a7d10b8d4da4bbe27a2c968d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waveGauge: {fileID: 1814168155}
-  player: 2
 --- !u!114 &1594451316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5368,8 +5319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505885e861c1fab46a1118e9faaf9bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphere: {fileID: 0}
-  gun: {fileID: 0}
+  sphere: {fileID: 1202569884395668, guid: be7a19d536a0c9f49a02207f4e2d4e99, type: 2}
+  gun: {fileID: 1946622991}
   speed: 25
   player: 2
 --- !u!114 &1594451324
@@ -5385,6 +5336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLife: 100
   maxlife: 100
+  lifeGauge: {fileID: 1814168155}
 --- !u!4 &1613732000 stripped
 Transform:
   m_PrefabParentObject: {fileID: 443874, guid: 038c874aea1642e47baca1d90b641841, type: 2}
@@ -5864,7 +5816,7 @@ GameObject:
   - component: {fileID: 1814168154}
   - component: {fileID: 1814168155}
   m_Layer: 5
-  m_Name: WaveGauge
+  m_Name: lifeGauge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5876,19 +5828,19 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1814168153}
-  m_LocalRotation: {x: 0, y: 0, z: 0.76604444, w: 0.64278764}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2109119627}
   - {fileID: 313650441}
   m_Father: {fileID: 1868029123}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 644.5, y: -15.2}
-  m_SizeDelta: {x: 174, y: 19}
+  m_AnchoredPosition: {x: 702, y: -13}
+  m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1814168155
 MonoBehaviour:
@@ -5932,7 +5884,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6081,7 +6033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7607844, g: 0.7490196, b: 0.08235294, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6741,7 +6693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9921569, g: 0.019607844, b: 0.003921569, a: 1}
+  m_Color: {r: 1, g: 0.6960784, b: 0.6911765, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6809,7 +6761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.83921576, b: 0.050980397, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6844,7 +6796,7 @@ GameObject:
   - component: {fileID: 2143167464}
   - component: {fileID: 2143167465}
   m_Layer: 5
-  m_Name: WaveGauge
+  m_Name: lifeGauge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6856,7 +6808,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2143167463}
-  m_LocalRotation: {x: 0, y: 0, z: 0.6360782, w: 0.7716246}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6864,11 +6816,11 @@ RectTransform:
   - {fileID: 164076705}
   m_Father: {fileID: 501375347}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 79}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 57, y: -18}
-  m_SizeDelta: {x: 175, y: 21}
+  m_AnchoredPosition: {x: 0, y: -15}
+  m_SizeDelta: {x: 200, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2143167465
 MonoBehaviour:
@@ -6912,7 +6864,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

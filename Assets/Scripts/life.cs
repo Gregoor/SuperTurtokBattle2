@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class life : MonoBehaviour {
     public int currentLife;
     public int maxlife;
+    public Slider lifeGauge;
     int cd = 6;
     int count = 0;
 	// Use this for initialization
@@ -29,5 +31,7 @@ public class life : MonoBehaviour {
             Destroy(c.collider.gameObject);
         }
         if ( currentLife <= 0) { Destroy(this.gameObject); }
+
+        lifeGauge.value = currentLife;
     }
 }
